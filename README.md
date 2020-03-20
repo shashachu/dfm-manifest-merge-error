@@ -1,5 +1,5 @@
 # dfm-manifest-merge-error
-Sample app demonstrating the manifest merge error when using product flavors and dynamic feature modules.
+Sample app demonstrating the manifest merge error when using product flavors and dynamic feature modules when enabling `android.uniquePackageNames`. This results in runtime crashes when using AGP 3.6.1 unless you enable `android.generateRJava`.
 
 Building a flavor that does not override applicationId fails at the manifest merge step. Building a flavor that does override applicationId succeeds.
 
